@@ -1,0 +1,164 @@
+/* General Reset and Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to bottom right, #f0f4f8, #dfe9f3);
+  color: #333;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #00bcd4, #2196f3);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffeb3b;
+}
+
+/* About Section */
+.about {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.about-content img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.about-content div {
+  max-width: 600px;
+}
+
+.skills {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.skills li {
+  background-color: #2196f3;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+}
+
+/* Education */
+.education {
+  background-color: #e3f2fd;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.education-list {
+  list-style: none;
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.education-list li {
+  margin-bottom: 15px;
+}
+
+/* Contact */
+.contact {
+  padding: 40px 20px;
+  background: linear-gradient(to right, #ffffff, #fce4ec);
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: #f06292;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #ec407a;
+}
+
+/* Footer */
+footer {
+  background-color: #1976d2;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-content div {
+    text-align: left;
+    padding-left: 30px;
+  }
+}
